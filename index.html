@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayReverse - Recover Wrong UPI Payments</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="icon">₹</div>
+      <div>
+        <h1>PayReverse</h1>
+        <p>Private UPI payment recovery — fast, discreet, professional</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#features">Why PayReverse</a>
+      <a href="#get-started" class="btn-primary">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Retrieve UPI payments sent to a wrong account — securely and privately.</h2>
+      <p>
+        We help individuals recover UPI transfers sent to incorrect accounts by
+        guiding legal, bank-mediated, or manual reconciliation steps — while keeping your data private.
+      </p>
+
+      <div class="features" id="features">
+        <div class="card">
+          <h3>Confidential</h3>
+          <p>End-to-end privacy and minimal disclosure.</p>
+        </div>
+        <div class="card">
+          <h3>Professional</h3>
+          <p>Experienced negotiators and bank liaison support.</p>
+        </div>
+        <div class="card">
+          <h3>Transparent</h3>
+          <p>Clear steps, realistic timelines, and fair fees.</p>
+        </div>
+      </div>
+
+      <div id="how" class="how">
+        <h3>How it works</h3>
+        <ol>
+          <li>Submit details: UPI reference, screenshot, amount, and wrong UPI ID.</li>
+          <li>We verify and contact the bank or recipient confidentially.</li>
+          <li>We assist with reconciliation, refunds, or escalation to the bank/authorities.</li>
+        </ol>
+      </div>
+    </section>
+
+    <aside id="get-started" class="form-section">
+      <h3>Get started</h3>
+      <p>
+        Select your country and state, provide contact details and a brief
+        description. Attach payment screenshots if available.
+      </p>
+
+      <form id="payreverseForm">
+        <label>Full name</label>
+        <input type="text" name="name" required placeholder="Your full name" />
+
+        <label>Email</label>
+        <input type="email" name="email" required placeholder="you@example.com" />
+
+        <label>Phone</label>
+        <input type="text" name="phone" required placeholder="+91 98765 43210" />
+
+        <label>UPI ID (if known)</label>
+        <input type="text" name="upiId" placeholder="example@bank" />
+
+        <div class="grid">
+          <div>
+            <label>Country</label>
+            <select name="country" id="country">
+              <option>India</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label>State</label>
+            <select name="state" id="state"></select>
+          </div>
+        </div>
+
+        <label>Description</label>
+        <textarea name="description" required placeholder="Describe what happened..."></textarea>
+
+        <label>Attach screenshots / documents (optional)</label>
+        <input type="file" name="files" multiple accept="image/*,application/pdf" />
+
+        <button type="submit" class="btn-primary">Submit request</button>
+        <button type="reset" class="btn-secondary">Clear</button>
+
+        <p class="disclaimer">
+          By submitting you agree to our privacy policy. We operate as a private liaison and do not guarantee recovery — outcomes depend on bank/recipient cooperation and local laws.
+        </p>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <div>
+      <h4>PayReverse</h4>
+      <p>© <span id="year"></span> PayReverse — All rights reserved.</p>
+    </div>
+    <div class="links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
